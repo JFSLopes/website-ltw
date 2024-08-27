@@ -1,0 +1,30 @@
+footer {
+    background-color: #025162;
+    color: white;
+    height: 250px;
+}
+
+footer #copyright{
+
+    width: 500px;
+    height: 24;
+    padding: 1em;
+    margin-left: 48px;
+    text-align: left;
+    padding-left: 24px;
+}
+
+footer #website {
+    text-align: left;
+    margin-left: 2em;
+    padding: 1em;
+    width: 369px;
+    height: 47px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+footer .footer-container {
+    width: 489px;
+    height: 400px;
+}

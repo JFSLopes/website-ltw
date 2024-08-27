@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h2 {
+    color: #025162;
+    font-family: "Manrope";
+    margin: 1em;
+    font-size: xx-large;
+}
+
+#wishlist-products ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#wishlist-products {
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+.product-item-wishlist {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.product-item-wishlist:hover {
+    box-shadow: 7px 5px 5px #ccc;
+}
+
+.product-image-wishlist {
+    width: 150px;
+    height: 150px; 
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.product-name-wishlist {
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+}
+
+.product-price-wishlist {
+    padding: 5px;
+    color: black;
+    margin: 0;
+}
+
+.delete-product-wishlist {
+    background-color: white;
+    color: #441015;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: "Manrope";
+    margin-right: 0px;
+    margin-left: 50px;
+
+}
+
+.delete-product-wishlist:hover {
+    text-decoration: underline;
+}
+
+
+#product-details-wishlist {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: flex-start;
+}
+
+.button-container {
+    display: flex; 
+    flex-direction: row; 
+    margin-top: auto; 
+}
+
+
+.add-product-wishlist {
+    background-color: white;
+    color: #025162;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    align-self: flex-end;
+    font-family: "Manrope";
+    font-weight: bold;
+}
+
+.add-product-wishlist:hover {
+    text-decoration: underline;
+}
+
+
+#empty {
+    font-family: "Manrope";
+    margin-left: 32px;
+    font-size: large;
+}

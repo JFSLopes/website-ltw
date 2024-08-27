@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/main_page/top_bar.css">
+    <link rel="stylesheet" href="../css/main_page/filter.css">
+    <link rel="stylesheet" href="../css/main_page/products.css">
+    <link rel="stylesheet" href="../css/product_page/product.css">
+    <link rel="stylesheet" href="../css/product_page/review.css">
+    <link rel="stylesheet" href="../css/product_page/comments.css">
+    <link rel="stylesheet" href="../css/wishlist/wishlist.css">
+    <link rel="stylesheet" href="../css/sell/sell_product.css">
+    <link rel="stylesheet" href="../css/admin/admin_page.css">
+    <link rel="stylesheet" href="../css/profile/profile_page.css">
+    <script src="../js/show_hidden_filter.js" defer></script>
+</head>
+<body>
+    <header id="page-header">
+        <h1><a href="main.html">Second Chance Market</a></h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="sell_product.html">Sell product</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form id="sell-product-form" action="submit_product.php" method="post">
+        <label><input type="radio" name="product-type" value="decoration" id="decoration"> Decoration</label>
+        <label><input type="radio" name="product-type" value="furniture" id="furniture"> Furniture</label>
+
+        <div id="furniture-options" class="hidden">
+            <label>Furniture Type:
+                <select name="furniture-type">
+                    <option value="kitchen">Kitchen</option>
+                    <option value="bedroom">Bedroom</option>
+                    <option value="hall">Hall</option>
+                    <option value="living-room">Living Room</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="decoration-options" class="hidden">
+            <label>Decoration Type:
+                <select name="decoration-type">
+                    <option value="painting">Painting</option>
+                    <option value="sculpture">Sculpture</option>
+                    <option value="vase">Vase</option>
+                    <option value="decorative-figurine">Decorative Figurine</option>
+                </select>
+            </label>
+        </div>
+
+        <label>Product Name: <input type="text" name="product-name" required></label>
+
+        <label>Product Description: <textarea name="product-description" required></textarea></label>
+
+        <label>Price: <input type="number" name="product-price" min="0" required></label>
+
+        <label>Product Picture URL: <input type="text" name="product-picture" required></label>
+
+        <label>Condition:
+            <select name="product-state">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+                <option value="refurbished">Refurbished</option>
+            </select>
+        </label>
+        <label>Size:
+            <select name="product-size">
+                <option value="small">Small</option>
+                <option value="big">Big</option>
+            </select>
+        </label>
+        <label>Quantity:
+            <input type="number" min="1" id="increase-quantity" name="increase-quantity" value="1" required>
+        </label>
+
+        <button type="submit">Submit Product</button>
+    </form>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2024 Second Chance Market. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

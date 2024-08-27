@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/main_page/top_bar.css">
+    <link rel="stylesheet" href="../css/main_page/filter.css">
+    <link rel="stylesheet" href="../css/main_page/products.css">
+    <link rel="stylesheet" href="../css/product_page/product.css">
+    <link rel="stylesheet" href="../css/product_page/review.css">
+    <link rel="stylesheet" href="../css/product_page/comments.css">
+    <link rel="stylesheet" href="../css/wishlist/wishlist.css">
+    <link rel="stylesheet" href="../css/sell/sell_product.css">
+    <link rel="stylesheet" href="../css/admin/admin_page.css">
+    <link rel="stylesheet" href="../css/profile/profile_page.css">
+    <script src="../js/show_hidden_filter.js" defer></script>
+</head>
+<body>
+    <header id="page-header">
+        <h1><a href="main.html">Second Chance Market</a></h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="sell_product.html">Sell product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="product-page">
+        <section id="product-details">
+            <form id="remove-product-form" action="remove_product.php" method="post">
+                <button class="admin-only remove-product-btn" type="submit" name="remove_product">Remove Product</button>
+            </form>
+            <h3 id="product-title">Product Name</h3>
+            <p id="date">Published: 2022-08-15</p>
+            <img src="https://picsum.photos/200/300" alt="Product Image">
+            <p id="product-categories">Furnitue, Bedroom, Big, New</p>
+            <p id="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam ligula sed felis tincidunt, vel fermentum ex bibendum.</p>
+            <p class="price-display">Price: 50.00€</p>
+            <p class="quantity-display">Quantity: 10</p>
+            <p class="location">Location: </p>
+
+            <form id="wishlist-form">
+                <button type="submit">Add to Wishlist</button>
+            </form>
+
+            <section id="seller-details">
+                <h3>Seller Information</h3>
+                <a href="profile.html"><img src="https://picsum.photos/200/300" alt="Seller Profile Picture"></a>
+                <a href="profile.html"><p>Seller name</p></a>
+            </section>
+        </section>
+
+        <section id="add-review">
+            <h3>Add a Review</h3>
+            <form id="review-form">
+                <label>Your Review:<textarea id="user-review" name="user-review" required></textarea></label>
+                <label>Review: <input type="number" min="1" max="5" id="value-review" name="value-review" required></label>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section id="product-reviews">
+            <h3>Reviews</h3>
+            <p>Average Rating: 4.5</p>
+            <!-- Review section -->
+            <div class="review">
+                <div class="user-info">
+                    <a href="profile.html"><img src="https://picsum.photos/200/300" alt="User profile picture"></a>
+                    <a href="profile.html"><p>User name</p></a>
+                </div>
+                <p class="review-rating">Rating: 4/5</p>
+                <p class="review-description">Great product! Highly recommended.</p>
+                <p class="review-date">Date: 2024-04-15</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2024 Second Chance Market. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

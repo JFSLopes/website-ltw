@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/authentication/login.css">
+</head>
+<body id="register_body">
+    <header>
+        <h1 id="login_h1">Second Chance Market</h1>
+    </header>
+    <form action="../php/login.php" method="post" id="login_form">
+        <label id="login_email">Email: <input type="text" placeholder="email" name="email" required></label>
+        <label id="login_password">Password: <input type="password" placeholder="password" name="password" required></label>
+        <button type="submit" id="login_button">Log in</button>
+    </form>
+    <a href="register.html">
+        <button id="register_button">Register</button>
+      </a>
+    
+</body>
+</html>

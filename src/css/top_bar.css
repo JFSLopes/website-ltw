@@ -1,0 +1,29 @@
+body header{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+body header h1{
+    flex-grow: 1;
+}
+
+body header h1 a{
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+}
+
+body header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+body header nav ul li{
+    padding: 1em;
+}
+
+body header nav ul a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#checkout_form, h2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+#checkout_form h3 {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #000;
+}
+
+#checkout_form #delivery #fullname, #checkout_form #delivery #address, #checkout_form #delivery #city, #checkout_form #delivery #zipcode {
+    width: 98%;
+    padding: 5px;
+    font-family: "Manrope";
+    margin-top: 5px;
+    border: 1px solid darkgray;
+}
+
+#checkout_form #delivery {
+    background-color: #cccccc60;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+#checkout_form #pay {
+    font-family: "Manrope";
+    background-color: #cccccc60;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#checkout_form #pay #method{
+    font-family: "Manrope";
+    padding: 5px;
+}
+
+
+#checkout_form button {
+    margin-top: 20px;
+}
+
+
+@media (max-width:1030px) {
+
+    #checkout_form {
+        padding: 0 20px;
+    }
+
+    h2 {
+        padding-left: 10px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #checkout_form {
+        padding: 0 20px;
+    }
+
+    #delivery, #pay {
+        padding: 5px
+    }
+
+    #checkout-button {
+        width: 100%;
+    }
+
+    h2 {
+        padding-left: 20px;
+        font-weight: 500;
+    }
+}
+

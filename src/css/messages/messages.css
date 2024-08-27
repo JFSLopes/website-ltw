@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#messages-section {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+#users-message{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#users-message.message-frame {
+    margin-right: 5px;
+}
+
+#direct-messages{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#change-user{
+    display: none;
+}
+
+
+#users-message, #direct-messages {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info-frame {
+    transition: 0.5s;
+}
+
+.user-info-frame:hover {
+    cursor: pointer;
+    background-color: #557880;
+    color: white;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info .user-name {
+    margin: 0;
+}
+
+.messages-list {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    gap: 10px;
+}
+
+.sending-message {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.receiving-message {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0;
+}
+
+.message {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.sending-message .message {
+    background-color: #007bff;
+    color: #fff;
+    font-family: "Manrope";
+}
+
+.receiving-message .message {
+    background-color: #eaeaea;
+}
+
+.date-message-field {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.date-message-field::before,
+.date-message-field::after {
+    content: "--------------------------------------------- ";
+    color: #ccc;
+}
+
+.message-date {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.message-frame {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.user-info-frame {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Send a message form */
+#new-message {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 20px;
+}
+
+#new-message form {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#new-message label {
+    margin: 0;
+    padding: 0;
+}
+
+#new-message input[type="text"] {
+    font-family: "Manrope";
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#new-message button[type="submit"] {
+    justify-content: end;
+    background-color: #025162;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+
+#new-message button[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1212px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 576px) { 
+    #change-user{
+        display: block;
+        position: sticky; 
+        top: 0; 
+        left: 0; 
+    }
+
+    #messages-section{
+        grid-template-columns: 1fr;
+        width: 60%;
+        height: 60vh;
+    }
+    #direct-messages{
+        display: none;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;    
+        justify-content: center; 
+        text-align: center;    
+        margin-bottom: 15px;
+    }
+    .date-message-field::before,
+    .date-message-field::after {
+    content: "-------------------";
+    color: #ccc;
+    }
+
+    #new-message input[type="text"] {
+        width: 60%; 
+    }
+     
+}
+
+#direct-messages {
+    position: relative; 
+}

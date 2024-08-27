@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#filter-form{ /* At the beggining they must not be visible */
+    display: none;
+    transition: display 0.3s ease; 
+
+}
+
+#checkbox-filter{
+    display: none;
+}
+
+#toggle-filter::before{
+    content:'\2630';
+    color: black;
+    transition: content 0.3s ease;
+
+}
+
+#toggle-filter, #search-form {
+    display: inline-block;
+}
+
+#toggle-filter {
+    float: left; 
+    display: block;
+    margin-top: 10px; 
+}
+
+#search-form {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#search-input {
+    font-family: "Manrope";
+    width: 90%;
+    padding: 5px;
+}
+
+#search-form button {
+    padding: 10px;
+    color: #025162;
+    background-color: white;
+}
+
+#search-form button i {
+    font-size: 1.5em;
+}
+
+#checkbox-filter:checked ~ #filter-form{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    transition: display 0.3s ease;
+    font-family: "Manrope";
+}
+
+#checkbox-filter:checked ~ #toggle-filter::before {
+    content: '\2715';
+    color: #441015;
+    transition: content 0.3s ease;
+    margin-right: 10px;
+}
+
+.filter-group {
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    font-weight: 300;
+}
+
+.filter-group h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 300;
+}
+
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"] {
+    margin-right: 5px;
+    background-color: #025162;
+}
+
+#price-range {
+    width: 100%;
+    background-color: #025162;
+}
+
+#price-display {
+    display: block;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #025162;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Manrope";
+    margin-top: 5px;
+    width: fit-content;
+}
+
+button[type="radio"]:checked {
+    background-color: #025162;
+    color: #025162;
+    border-color: #025162;
+}
+ 
+button[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+.hidden{
+    display: none;
+}
+
+#furniture:checked ~ #furniture-options {
+    display: block;
+}
+
+#furniture-options ul, #decoration-options ul, .filter-group ul{
+    list-style-type: none;
+}
+
+
+
+@media (max-width: 912px) {
+
+    #search-input {
+        width: 80%; 
+    }
+    #search-form button {
+        padding: 8px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    #search-input {
+        width: 70%; 
+    }
+    #search-form button {
+        padding: 6px; 
+    }
+}

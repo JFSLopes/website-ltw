@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/main_page/top_bar.css">
+    <link rel="stylesheet" href="../css/main_page/filter.css">
+    <link rel="stylesheet" href="../css/main_page/products.css">
+    <link rel="stylesheet" href="../css/product_page/product.css">
+    <link rel="stylesheet" href="../css/product_page/review.css">
+    <link rel="stylesheet" href="../css/product_page/comments.css">
+    <link rel="stylesheet" href="../css/wishlist/wishlist.css">
+    <link rel="stylesheet" href="../css/sell/sell_product.css">
+    <link rel="stylesheet" href="../css/admin/admin_page.css">
+    <link rel="stylesheet" href="../css/profile/profile_page.css">
+    <script src="../js/show_hidden_filter.js" defer></script>
+</head>
+<body>
+    <header id="page-header">
+        <h1><a href="main.html">Second Chance Market</a></h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="sell_product.html">Sell product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-profile">
+        <section id="profile-details">
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="https://picsum.photos/200/300" alt="User profile picture">
+                </div>
+                <div class="profile-details">
+                    <p class="name">John Doe</p>
+                    <p id="personal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam, eius laudantium quam labore neque doloribus dolorum a, omnis pariatur et voluptatum fugit, qui impedit iure quas consequuntur asperiores quibusdam.</p>
+                    <p id="phone-number"><strong>Phone Number:</strong> 123456789</p>
+                </div>
+            </div>
+    
+            <form action="change_profile.php" method="post"> <!-- Should only be in the page if it is his profile -->
+                <button type="submit">Change Profile</button>
+            </form>
+        
+            <form action="send_message.php" method="post"> <!-- Should only be in the page if not his profile -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section id="admin-actions" class="admin-only">
+            <form action="elevate_to_admin.php" method="post"> <!-- Should only be in the page if admin -->
+                <button type="submit">Elevate to Admin</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2024 Second Chance Market. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

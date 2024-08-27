@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.send-message {
+    font-family: "Manrope";
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 60%;
+    padding: 20px;
+    border: 1.5px solid #025162;
+    border-radius: 10px;
+    background-color: #EADFD8;
+    margin-top: 20px;
+
+}   
+
+.send-message h2 {
+    margin-top: 0;
+    color: #025162;
+}
+
+.send-message form {
+    color: #025162;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    font-family: "Manrope";
+
+}
+
+#message-box {
+    max-width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Manrope";
+}
+
+#send-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#025162;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    font-family: "Manrope";
+
+}
+
+#send-button:hover {
+    text-decoration: underline;
+}

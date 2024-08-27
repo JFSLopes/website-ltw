@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#product-page{
+    background-color:  #cccccc60;
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    padding: 20px;
+    font-family: "Manrope";
+    margin-bottom: 20px;
+}
+
+#product-details{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#product-images-container {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+#product-images-container #images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#product-images-container img {
+    width: 300px;
+    height: 350px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+#button-change {
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+
+#change-image-btn {
+    padding: 0;
+    border-width: 0;
+    color: #025162;
+}
+
+#product-details #remove {
+    background-color: #441015;
+    height: fit-content;
+}
+
+#product-details #remove:hover {
+    text-decoration: underline;
+}
+
+#date{
+    margin: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#remove-product-form{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#edit-product-form{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+#product-title{
+    margin: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#product-categories{
+    margin: 0;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#product-description{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.price-display{
+    margin: 0;
+    padding: 0;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#seller-details{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#cart-form{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+}
+
+#cart-form button {
+    background-color: #025162;
+}
+
+#cart-form button, #edit-product-form button, #remove-product-form button{
+    background-color: #025162;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Manrope";
+}
+
+#cart-form button:hover {
+    text-decoration: underline  ;
+}
+
+.quantity-display{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.map-container {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+    height: 200px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 150px;
+    border: 0;
+}
+
+.map-container h3{
+    font-size: 0.7em;
+}
+
+#seller-details {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
+}
+
+#seller-details h3{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#seller-details img {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#seller-details p {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-decoration: none;
+    color: black;
+}
+
+#edit-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #EADFD8;
+    border: 1px solid #46737e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #025162;
+    font-family: "Manrope";
+}
+
+#edit-form label {
+    margin-bottom: 10px;
+    font-family: "Manrope";
+}
+
+#edit-form input[type="text"],
+#edit-form input[type="number"],
+#edit-form textarea,
+#edit-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #025162;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: "Manrope";
+}
+
+#edit-form button[type="submit"] {
+    background-color: #025162;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Manrope";
+}
+
+#edit-form button[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+#wishlist-form {
+    grid-row-start: 7;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#wishlistbtn {
+    font-family: "Manrope";
+    background-color: #025162;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#wishlistbtn:hover {
+    text-decoration: underline;
+}

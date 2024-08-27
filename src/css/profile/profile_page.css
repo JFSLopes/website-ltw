@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container-profile {
+    width: 60%;
+    margin: auto;
+    font-family: "Manrope";
+}
+
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    font-family: "Manrope";
+
+}
+
+.profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.profile-details #personal-info {
+    margin-right: 50px;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.profile-details .name {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 0.5px solid #025162;
+    margin-right: 2em;
+    color: #025162;
+}
+
+#personal-info {
+    margin-top: 10px;
+}
+
+#phone-number {
+    margin-top: 10px;
+}
+
+#profile-details {
+    background-color:#cccccc60;
+    padding: 20px;
+}
+
+#profile-details h2 {
+    margin-bottom: 10px;
+}
+
+#profile-details p {
+    margin-bottom: 5px;
+    color: #025162;
+}
+
+#profile-details form button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #025162;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Manrope";
+
+}
+
+#profile-details form button:hover {
+    text-decoration: underline;
+}
+
+#admin-actions {
+    background-color: #cccccc60;
+    margin: 20px;
+    padding: 20px;
+    font-family: "Manrope";
+}
+
+#admin-actions form button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #441015;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Manrope";
+}
+
+#admin-actions form button:hover {
+    text-decoration: underline;
+}
+
+#user-reviews{
+    width: 60%;
+    margin: auto;
+}
+
+#add-review-user{
+    width: 60%;
+    margin: auto;
+}
+
+#remove_user_review_form button{
+    font-family: "Manrope";
+    background-color: #441015;
+    color: #fff;
+    border: 1px solid #441015;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#remove_user_review_form button:hover {
+    text-decoration: underline;
+}
+
+#review-form-user button {
+    font-family: "Manrope";
+    background-color: #025162;
+    color: #fff;
+    border: 1px solid #025162;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#review-form-user button:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1182px) {
+    .profile-content {
+        grid-template-columns: min-content 1fr; 
+    }
+
+    .profile-details {
+        margin-right: 0; 
+        max-width: 100;
+    }
+
+    .profile-image img {
+        max-width: 200px; 
+    }
+
+
+}
+
+@media screen and (max-width: 936px) {
+    .profile-content {
+        grid-template-columns: 100%; 
+    }
+    
+    .profile-details {
+        margin-right: 0; 
+    }
+    
+    .profile-image {
+        text-align: center; 
+    }
+    
+    .profile-image img {
+        margin-bottom: 10px; 
+    }
+
+    .profile-image {
+        align-self: flex-start; 
+    }
+}

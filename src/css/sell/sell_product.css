@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#sell-product-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+h2 {
+    font-weight: 500;
+}
+
+#sell-options {
+    padding: 20px;
+    background-color:  #cccccc60;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+#sell-details {
+    padding: 20px;
+    background-color:  #cccccc60;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+#sell-product-form h3 {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #000;
+}
+
+#sell-product-form label {
+    margin-bottom: 10px;
+    font-family: "Manrope";
+}
+
+#sell-product-form textarea {
+    width: 99%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "Manrope";
+    margin-top: 5px;
+    border: 1px solid darkgray;
+}
+
+#sell-product-form #product-description {
+    margin-bottom: 15px;
+}
+
+#sell-product-form #address, #sell-product-form #zipcode, #sell-product-form #product-name, #sell-product-form #price, #sell-product-form #product-pictures {
+    width: 98%;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: "Manrope";
+    border: 1px solid darkgray;
+    margin-bottom: 15px;
+}
+
+#sell-product-form #product-pictures {
+    border: 1px solid darkgray;
+    background-color: #FFFFFF;
+}
+
+#sell-product-form #condition,  #sell-product-form #quantity {
+    margin-bottom: 15px;
+}
+
+#radio-options {
+    margin-bottom: 15px;
+}
+
+#sell-product-form #increase-quantity {
+    width: 98%;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: "Manrope";
+    border: 1px solid darkgray;
+    margin-bottom: 15px;
+}
+
+#size, #condition {
+    font-family: "Manrope";
+    border: 1px solid darkgray;
+    background-color: #FFFFFF;
+}
+
+#sell-product-form button[type="submit"] {
+    background-color: #025162;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Manrope";
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+#sell-product-form button[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+#size {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+#decoration-options label, #furniture-options label {
+    font-weight: 300;
+}
+
+#decoration-options input, #furniture-options input {
+    margin-right: 7px;
+}
+
+@media (max-width: 1030px) {
+    #sell-product-form {
+        padding: 0 20px;
+    }
+
+    h2 {
+        padding-left: 10px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 600px) {
+    #sell-product-form {
+        padding: 0 20px;
+    }
+    
+    #sell-options {
+        padding: 5px;
+    }
+
+    #sell-details {
+        padding: 5px;
+    }
+
+    #sell-product-button{
+        width: 100%; 
+    }
+
+    h2 {
+        padding-left: 20px;
+        font-weight: 500;
+    }
+
+    #radio-options {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,151 @@
+/* Specific CSS for Category Management Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#admin-functionalities {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+#admin-functionalities ul li {
+    font-size: large;
+}
+
+#admin-functionalities h2 {
+    font-weight: 500;
+}
+
+
+#category-manegemnet {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Manrope";
+}
+
+#category-manegemnet h3 {
+    font-size: x-large;
+    font-weight: 400;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #000;
+}
+
+input#category-name {
+    max-width: 1000px;
+}
+
+#create-category-form {
+    margin-top: 10px;
+    font-family: "Manrope";
+}
+
+#create-category-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: "Manrope";
+}
+
+#create-category-form input[type="text"],
+#create-category-form select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: "Manrope";
+    font-size: 16px;
+}
+
+#create-category-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #025162;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Manrope";
+}
+
+#create-category-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+#delete-category-form {
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+    flex: 1; 
+    max-width: 700px; 
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+#delete-category-form ul {
+    list-style: none;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#delete-category-form ul li label {
+    font-weight: 400;
+}
+
+#delete-category-form div {
+    flex: 1;
+}
+
+#delete-category-form button {
+    display: none;
+    background-color: #441015;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#delete-category-form:not(.hidden) {
+    display: flex;
+}
+
+#edit-operation {
+    font-size: 16px;
+    font-family: "Manrope";
+    padding: 5px;
+}
+
+#category-select-Decoration, #category-select-Furniture, #category-select-Size, #category-select-Condition {
+    padding: 3px;
+    font-family: "Manrope";
+    margin-left: 5px;
+}
+
+#admin-condition, #admin-size, #admin-furniture, #admin-decoration {
+    margin-top: 15px;
+}
+
+
+@media (max-width: 1030px) {
+    #admin-functionalities, #category-manegemnet {
+        padding: 0 20px;
+    }
+
+    input #category-name {
+        max-width: 1000px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #admin-functionalities, #category-manegemnet {
+        padding: 0 20px;
+    }
+
+    input #category-name {
+        max-width: 1000px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#register_title{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #025162;
+    background-color: white;
+    font-weight: 700;
+    justify-content: space-between; 
+}
+
+#reg_body{
+    font-family: "Manrope";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#register_form{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: "Manrope";
+    align-items: left;
+    display: flex;
+    width: 400px;
+    height: max-content;
+    flex-direction: column;
+    background-color: #cccccc60;
+    border: 1px solid #025162;
+}
+
+#register_form label{   
+    font-size: large;
+    text-decoration: solid;
+    padding: 10px;
+    color: #025162;
+}
+
+
+#reg_button{
+    background-color: #025162;
+    text-decoration: solid;
+    color: white;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 6px 10px;
+    width:fit-content;
+    margin: 0 auto;
+}
+
+#reg_pass {
+    margin-bottom: 12px;
+}
+
+#log {
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    
+}
+
+a {
+    text-decoration: underline;
+    color: #025162;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    #register_title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #register_form {
+        padding: 20px 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #register_form label {
+        font-size: medium;
+    }
+
+    #reg_button {
+        font-size: small;
+        padding: 8px 12px;
+    }
+}
